@@ -38,7 +38,6 @@ include(../mne-cpp.pri)
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    mne_anonymize \
     mne_rt_server \
     mne_show_fiff
 
