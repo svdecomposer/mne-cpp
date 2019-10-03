@@ -283,7 +283,7 @@ public:
     *
     * @return type cast of the tag data pointer
     */
-    inline qint64* toJulian() const;
+    inline qint32* toJulian() const;
 
     //=========================================================================================================
     /**
@@ -619,14 +619,14 @@ inline qint32* FiffTag::toInt() const
 
 //*************************************************************************************************************
 
-inline qint64* FiffTag::toJulian() const
+inline qint32* FiffTag::toJulian() const
 {
     if(this->isMatrix() || this->getType() != FIFFT_JULIAN) {
         printf("Expected a julian tag : %d (found data type %d instead)\n",this->kind,this->getType());
         return NULL;
     }
     else
-        return (qint64*)this->data();
+        return (qint32*)this->data();
 }
 
 
