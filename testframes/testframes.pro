@@ -52,6 +52,6 @@ SUBDIRS += \
             test_interpolation \
             test_geometryinfo \
             test_spectral_connectivity \
-            test_fiff_anonymize
+            test_mne_anonymize
     }
 }
